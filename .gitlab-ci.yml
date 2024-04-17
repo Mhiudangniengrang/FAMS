@@ -1,0 +1,68 @@
+stages:
+  - build
+  # - test
+  - deploy
+
+variables:
+  SSH_PRIVATE_KEY: "$SSH_PRIVATE_KEY"
+  IMAGE_NAME: registry.digitalocean.com/fams/fe
+
+before_script:
+  - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - chmod 600 ~/.ssh/config
+
+build_frontend:
+  stage: build
+  script:
+    - echo "Building frontend app..."
+    - npm i
+    - npm run build
+
+# test_frontend:
+#   stage: test
+#   script:
+#     - echo "Running frontend tests..."
+#     - npm i
+#     - npm run test
+
+
+Deploy_to_DigitalOcean_Container_Registry:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - echo "Login to DigitalOcean Container Registry..."
+    - echo $DO_ACCESS_TOKEN | docker login -u $DO_REGISTRY_USERNAME --password-stdin registry.digitalocean.com
+    - docker build -t $IMAGE_NAME .
+    - docker push $IMAGE_NAME
+  only:
+    - main
+    - fix-undefine-error
+
+
+
+# docker-build-and-push:
+#   stage: docker-build-and-push
+#   image: docker:latest
+#   services:
+#     - docker:dind
+#   before_script:
+#     - echo "Login to Docker Hub"
+#     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+#   script:
+#     - echo "Building Docker image"
+#     - docker build -t $DOCKER_USERNAME/fams-fe:latest .
+#     - echo "Pushing image to Docker Hub"
+#     - docker push $DOCKER_USERNAME/fams-fe:latest
+#   only:
+#     - main
+#     - nhat-sang
+
+
+  

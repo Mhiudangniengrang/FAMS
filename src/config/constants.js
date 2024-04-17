@@ -1,0 +1,11 @@
+export const ACTIVE_STATE = "Active";
+export const INACTIVE_STATE = "Inactive";
+export const FINISH_STATE = "Finish";
+export const ROLE_ADMIN = "ROLE_ADMIN";
+export const ROLE_TRAINER = "ROLE_TRAINER";
+export const DONE_STATE = "Done";
+export const NOTYET_STATE = "Not yet";
+export const DROPOUT_STATE = "DropOut";
+export const RESERVATION_STATE = "Reservation";
+export const INCLASS_STATE = "InClass";
+export const BACKTOCLASS_STATE = "BackToClass";

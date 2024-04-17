@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="6.15">
+  <testsuite name="undefined" errors="0" failures="0" skipped="2" timestamp="2024-03-16T12:15:54" time="5.376" tests="3">
+    <testcase classname=" renders ButtonReverve component" name=" renders ButtonReverve component" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" renders ReverveTable component" name=" renders ReverveTable component" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" opens the modal when the button is clicked" name=" opens the modal when the button is clicked" time="0.745">
+    </testcase>
+  </testsuite>
+</testsuites><?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="33" failures="0" errors="0" time="18.22">
+  <testsuite name="renders ClassDetailView Component" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:24" time="7.089" tests="9">
+    <testcase classname="renders ClassDetailView Component renders ClassDetailView components" name="renders ClassDetailView Component renders ClassDetailView components" time="0.736">
+    </testcase>
+    <testcase classname=" renders ScoreTable components" name=" renders ScoreTable components" time="0.128">
+    </testcase>
+    <testcase classname="renders GeneralCollapse component renders GeneralCollapse components" name="renders GeneralCollapse component renders GeneralCollapse components" time="0.028">
+    </testcase>
+    <testcase classname="renders ClassName component renders ClassName component" name="renders ClassName component renders ClassName component" time="0.006">
+    </testcase>
+    <testcase classname="renders DateCollapse component renders DateCollapse component" name="renders DateCollapse component renders DateCollapse component" time="0.042">
+    </testcase>
+    <testcase classname="renders AttendeeCollapse component renders AttendeeCollapse component" name="renders AttendeeCollapse component renders AttendeeCollapse component" time="0.018">
+    </testcase>
+    <testcase classname="renders TabList component renders TabList component" name="renders TabList component renders TabList component" time="0.124">
+    </testcase>
+    <testcase classname="renders ImportButton component renders &quot;Import&quot; component" name="renders ImportButton component renders &quot;Import&quot; component" time="0.023">
+    </testcase>
+    <testcase classname="renders ImportButton component opens the modal when the button is clicked" name="renders ImportButton component opens the modal when the button is clicked" time="0.057">
+    </testcase>
+  </testsuite>
+  <testsuite name="renders ClassView Component" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:31" time="2.134" tests="8">
+    <testcase classname="renders ClassView Component renders &quot;Training Class&quot; heading" name="renders ClassView Component renders &quot;Training Class&quot; heading" time="0.312">
+    </testcase>
+    <testcase classname="renders ClassView Component renders ClassTable component" name="renders ClassView Component renders ClassTable component" time="0.117">
+    </testcase>
+    <testcase classname="renders ClassView Component renders correct background" name="renders ClassView Component renders correct background" time="0.094">
+    </testcase>
+    <testcase classname="renders ClassTable component child renders search input" name="renders ClassTable component child renders search input" time="0.099">
+    </testcase>
+    <testcase classname="renders ClassTable component child handles click filter button" name="renders ClassTable component child handles click filter button" time="0.169">
+    </testcase>
+    <testcase classname=" handles click add button" name=" handles click add button" time="0.106">
+    </testcase>
+    <testcase classname=" renders table" name=" renders table" time="0.103">
+    </testcase>
+    <testcase classname=" handles click on row to navigate other component" name=" handles click on row to navigate other component" time="0.307">
+    </testcase>
+  </testsuite>
+  <testsuite name="renders StudentView Component" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:33" time="1.651" tests="8">
+    <testcase classname="renders StudentView Component renders &quot;Student list&quot; heading" name="renders StudentView Component renders &quot;Student list&quot; heading" time="0.216">
+    </testcase>
+    <testcase classname="renders StudentView Component renders StudentTable component" name="renders StudentView Component renders StudentTable component" time="0.112">
+    </testcase>
+    <testcase classname="renders StudentView Component renders Title component with correct classes" name="renders StudentView Component renders Title component with correct classes" time="0.089">
+    </testcase>
+    <testcase classname="renders StudentView Component renders correct background" name="renders StudentView Component renders correct background" time="0.084">
+    </testcase>
+    <testcase classname="renders StudentTable component child renders search input" name="renders StudentTable component child renders search input" time="0.078">
+    </testcase>
+    <testcase classname="renders StudentTable component child Filter button" name="renders StudentTable component child Filter button" time="0.083">
+    </testcase>
+    <testcase classname="renders StudentTable component child add button" name="renders StudentTable component child add button" time="0.079">
+    </testcase>
+    <testcase classname="renders StudentTable component child renders table" name="renders StudentTable component child renders table" time="0.083">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:35" time="0.667" tests="2">
+    <testcase classname=" renders ButtonReverve component" name=" renders ButtonReverve component" time="0.029">
+    </testcase>
+    <testcase classname=" renders BottomButtonReverve component" name=" renders BottomButtonReverve component" time="0.068">
+    </testcase>
+  </testsuite>
+  <testsuite name="Email component" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:36" time="1.256" tests="2">
+    <testcase classname="Email component renders Email component and checks if elements are present" name="Email component renders Email component and checks if elements are present" time="0.227">
+    </testcase>
+    <testcase classname="Email component simulates user interactions" name="Email component simulates user interactions" time="0.136">
+    </testcase>
+  </testsuite>
+  <testsuite name="renders Student Detail Component" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:37" time="1.244" tests="1">
+    <testcase classname="renders Student Detail Component renders Student Detail components" name="renders Student Detail Component renders Student Detail components" time="0.251">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:39" time="1.34" tests="2">
+    <testcase classname=" renders ButtonReverve component" name=" renders ButtonReverve component" time="0.112">
+    </testcase>
+    <testcase classname=" renders ReverveTable component" name=" renders ReverveTable component" time="0.22">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-03-14T02:42:40" time="1.125" tests="1">
+    <testcase classname=" renders EmailDetail component" name=" renders EmailDetail component" time="0.342">
+    </testcase>
+  </testsuite>
+</testsuites>

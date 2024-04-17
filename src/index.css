@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .scrollbar,
+  #myTable {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #d3d3d3;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background-color: #c7c7c7;
+    }
+  }
+}
+
+.sider {
+  position: fixed !important;
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://cantho.fpt.edu.vn/Data/Sites/1/media/082022/tham-quan-f-software-hcm/tham-quan-f-software-hcm.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ant-table-wrapper .ant-table-pagination-right {
+  justify-content: center;
+}
+
+.ant-table-thead .ant-table-cell {
+  background-color: #172554 !important;
+  color: white !important;
+}
+
+.ant-tabs-tab {
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  flex-shrink: 0 !important;
+  gap: 0px !important;
+  /* Reduced gap */
+  position: relative !important;
+  width: 202px !important;
+  height: 30px !important;
+  padding: 10px 20px 10px 30px !important;
+  background: #6d7684 !important;
+  border: 1px solid #ffffff !important;
+  z-index: 1 !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.ant-tabs-tab-btn {
+  color: white !important;
+}
+
+.ant-tabs-tab-active {
+  background-color: #2d3748 !important;
+  color: white !important;
+}
+
+.ant-tabs-tab:hover {
+  color: white !important;
+}
+
+.red-title-bar .ant-table-thead > tr > th {
+  background-color: #172554;
+  color: white;
+}
+
+.css-dev-only-do-not-override-zl9ks2
+  .ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  position: relative;
+}
+
+.setting-column {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  position: relative;
+}
+
+.ant-float-btn-group-circle {
+  z-index: 999 !important;
+}
+
+.rotate {
+  transform: rotate(90deg) !important;
+}
+
+.header {
+  width: -webkit-fill-available !important;
+}
+
+.header {
+  transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.right-bar {
+  margin-left: 230px !important;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-collapse
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  padding: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-primary {
+  /* color: black; */
+  border: solid #d5d2d2 1px;
+}
+:where(.css-1b0bdye).ant-collapse
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  padding: 0 !important;
+}
+
+/* :where(.css-dev-only-do-not-override-1b0bdye).ant-modal .ant-modal-content {
+  margin-top: 45px;
+} */
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-switch.ant-switch-checked
+  .ant-switch-inner {
+  background-color: #10e410;
+  padding-inline-start: 9px;
+  padding-inline-end: 24px;
+}
+
+/* :where(.css-dev-only-do-not-override-1b0bdye).ant-card-small>.ant-card-head {
+  min-height: 38px;
+  padding: 0 12px;
+  background-color: #172554;
+  font-size: 14px;
+  color: white;
+} */
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-primary {
+  color: white !important;
+  border: solid #d5d2d2 1px !important;
+  background-color: #172554 !important;
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: #172554;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-card .ant-card-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 56px;
+  margin-bottom: -1px;
+  padding: 0 24px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background: #172554;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 8px 8px 0 0;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-switch .ant-switch-inner {
+  background-color: #d1d5db;
+  display: block;
+  overflow: hidden;
+  border-radius: 100px;
+  height: 100%;
+  padding-inline-start: 24px;
+  padding-inline-end: 9px;
+  transition: padding-inline-start 0.2s ease-in-out,
+    padding-inline-end 0.2s ease-in-out;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper
+  .ant-table-column-sorter-inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.overflow-x-auto {
+  overflow-x: visible;
+}
+
+.custom-modal-title {
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-card .ant-card-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 74px;
+  margin-bottom: -1px;
+  padding: 0 24px;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  background: #172554;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 8px 8px 0 0;
+}
+
+.text-lg {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+}
+
+.ant-table-cell.column {
+  position: sticky !important;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.studentList .ant-table-cell:nth-child(1),
+.studentList .ant-table-cell:nth-child(2) {
+  position: sticky !important;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.pagination {
+  position: sticky;
+  bottom: 0;
+}
+
+#myTable {
+  overflow-x: auto;
+}
+
+@media (max-width: 992px) {
+  .right-bar {
+    margin-left: 55px !important;
+  }
+}
+
+@media (width: 992px) {
+  .right-bar {
+    margin-left: 230px !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .general {
+    display: grid;
+    grid-column-gap: 57px !important;
+  }
+}
+
+@media (min-width: 1540px) {
+  .general {
+    display: grid;
+    gap: 120px !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .general {
+    display: grid;
+    gap: 200px !important;
+  }
+}
+
+.modalStyle .ant-modal-content {
+  width: 850px;
+  right: 120px;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper
+  .ant-table-filter-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-block: -4px;
+  margin-inline: 4px -8px;
+  padding: 0 4px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper
+  .ant-table-filter-trigger:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #1677ff;
+}
+
+:where(
+    .css-dev-only-do-not-override-1b0bdye
+  ).ant-select.ant-select-in-form-item {
+  width: 96%;
+}
+:where(.css-1b0bdye).ant-btn-primary {
+  color: white !important;
+  border: solid #d5d2d2 1px !important;
+  background-color: #172554 !important;
+}
+:where(.css-1b0bdye).ant-card .ant-card-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 56px;
+  margin-bottom: -1px;
+  padding: 0 24px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  background: transparent;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 8px 8px 0 0;
+  /* background: #000; */
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
